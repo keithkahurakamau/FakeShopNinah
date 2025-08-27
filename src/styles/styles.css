@@ -1,0 +1,102 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f7e9eb, #f2cbd3, #eaaac0); /* soft rose-950 background gradient */
+  min-height: 100vh;
+}
+
+/* Fixed navbar class to match JSX */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(74,0,31,0.5); /* rose-950 glass effect */
+  backdrop-filter: blur(12px);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  margin-bottom: 2rem;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.navbar a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.user-card {
+  background-color: #4a001f; /* rose-950 dark card */
+  color: white;
+  margin-bottom: 1rem;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+.detail-container {
+  max-width: 500px;
+  margin: auto;
+  background: linear-gradient(135deg, #4a001f, #6b0a2b, #8c1a40); /* rose-950 gradient */
+  color: white;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  margin-bottom: 2rem;
+}
+.detail-card {
+  background: #f8e8ec;
+  color: #4a001f;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  margin-top: 0.5rem;
+}
+.back-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  background: white;
+  color: #4a001f;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+.back-button:hover {
+  background: #f9a8d4;
+  transform: scale(1.05);
+}
+.user-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+@media(min-width: 640px) {
+  .user-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media(min-width: 1024px) {
+  .user-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.user-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
