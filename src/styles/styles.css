@@ -1,102 +1,119 @@
 
+/* src/styles/styles.css */
+
+/* Global body styles */
 body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
+  margin: 0; /* Remove default margin */
+  font-family: 'Arial', sans-serif; /* Set default font family */
   background: linear-gradient(135deg, #f7e9eb, #f2cbd3, #eaaac0); /* soft rose-950 background gradient */
-  min-height: 100vh;
+  min-height: 100vh; /* Ensure body takes at least full viewport height */
 }
 
+/* Navigation bar styles */
 /* Fixed navbar class to match JSX */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(74,0,31,0.5); /* rose-950 glass effect */
-  backdrop-filter: blur(12px);
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-  margin-bottom: 2rem;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+  background-color: rgba(74,0,31,0.5); /* rose-950 glass effect with transparency */
+  backdrop-filter: blur(12px); /* Glass blur effect */
+  color: white; /* White text color */
+  padding: 1rem 2rem; /* Padding for spacing */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2); /* Subtle shadow */
+  margin-bottom: 2rem; /* Bottom margin for spacing */
 }
 .navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin-left: 1rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+  color: white; /* White link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+  margin-left: 1rem; /* Left margin for spacing */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
 }
 .navbar a:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  transform: scale(1.1); /* Scale up on hover */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25); /* Enhanced shadow on hover */
 }
 
+/* Base card styles */
 .card {
-  padding: 1rem;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 1rem; /* Internal padding */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2); /* Card shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
 }
 .user-card {
-  background-color: #4a001f; /* rose-950 dark card */
-  color: white;
-  margin-bottom: 1rem;
+  background-color: #4a001f; /* rose-950 dark card background */
+  color: white; /* White text color */
+  margin-bottom: 1rem; /* Bottom margin for spacing */
 }
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35); /* Enhanced shadow on hover */
 }
+
+/* User detail container styles */
 .detail-container {
-  max-width: 500px;
-  margin: auto;
-  background: linear-gradient(135deg, #4a001f, #6b0a2b, #8c1a40); /* rose-950 gradient */
-  color: white;
-  padding: 2rem;
-  border-radius: 24px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-  margin-bottom: 2rem;
+  max-width: 500px; /* Maximum width for the container */
+  margin: auto; /* Center the container */
+  background: linear-gradient(135deg, #4a001f, #6b0a2b, #8c1a40); /* rose-950 gradient background */
+  color: white; /* White text color */
+  padding: 2rem; /* Internal padding */
+  border-radius: 24px; /* Rounded corners */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35); /* Strong shadow for depth */
+  margin-bottom: 2rem; /* Bottom margin for spacing */
 }
 .detail-card {
-  background: #f8e8ec;
-  color: #4a001f;
-  padding: 1rem;
-  border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-  margin-top: 0.5rem;
+  background: #f8e8ec; /* Light rose background for detail cards */
+  color: #4a001f; /* Dark rose text color */
+  padding: 1rem; /* Internal padding */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* Subtle shadow */
+  margin-top: 0.5rem; /* Top margin for spacing */
 }
+
+/* Back button styles */
 .back-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  background: white;
-  color: #4a001f;
-  font-weight: bold;
-  text-decoration: none;
-  transition: transform 0.3s, background 0.3s;
+  display: inline-block; /* Inline block display */
+  margin-top: 1rem; /* Top margin for spacing */
+  padding: 0.75rem 1.5rem; /* Button padding */
+  border-radius: 50px; /* Pill-shaped button */
+  background: white; /* White background */
+  color: #4a001f; /* Dark rose text color */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s, background 0.3s; /* Smooth transitions */
 }
 .back-button:hover {
-  background: #f9a8d4;
-  transform: scale(1.05);
+  background: #f9a8d4; /* Light pink background on hover */
+  transform: scale(1.05); /* Scale up on hover */
 }
+
+/* User grid layout */
 .user-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  padding: 0 1rem;
+  display: grid; /* CSS Grid layout */
+  grid-template-columns: 1fr; /* Single column by default */
+  gap: 2rem; /* Gap between grid items */
+  padding: 0 1rem; /* Horizontal padding */
 }
+
+/* Responsive design - tablet breakpoint */
 @media(min-width: 640px) {
   .user-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
   }
 }
+
+/* Responsive design - desktop breakpoint */
 @media(min-width: 1024px) {
   .user-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
   }
 }
+
+/* User card link styles */
 .user-card-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+  display: block; /* Block display */
 }
